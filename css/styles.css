@@ -37,7 +37,7 @@ body {
 
 .header-web {
     padding-top: 24px;
-    padding-bottom: 32px;
+    padding-bottom: 25px;
 }
 
 .header-conect {
@@ -193,7 +193,6 @@ body {
 
 .our-sence {
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .evocation {
@@ -212,7 +211,6 @@ body {
 }
 
 .p-style {
-    height: 75px;
     width: 270px;
     color: var(--second-color);
     font-family: inherit;
@@ -223,8 +221,11 @@ body {
 
 .block {
     width: 270px;
-    height: 75px;
     list-style-type: none;
+}
+
+.block:not(:last-child) {
+    margin-right: 30px;
 }
 
 .h2-style {
@@ -264,6 +265,11 @@ body {
     margin-right: 30px;
 }
 
+.team-mambers {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .full-name {
     text-align: center;
     font-weight: var(--main-font-weight);
@@ -271,7 +277,6 @@ body {
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--main-color);
-    margin-top: 30px;
 }
 
 .position {
@@ -281,7 +286,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--second-color);
     margin-top: 10px;
-    margin-bottom: 30px;
 }
 
 footer {
@@ -350,7 +354,7 @@ footer {
 .header-portfolio {
     border-bottom: 1px solid #ECECEC;
     padding-top: 24px;
-    padding-bottom: 32px;
+    padding-bottom: 25px;
 }
 
 .logo-portfolio {
@@ -430,72 +434,34 @@ footer {
     padding-bottom: 94px;
 }
 
-.buttons {
+.buttons-list {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin-bottom: 50px;
 }
 
+.buttons {
+    border-style: none;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.first-button {
+    background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 
 /* for buttons */
 
-.all {
-    border-style: none;
-    background-color: #2196F3;
-    width: 73px;
-    height: 38px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    margin-right: 8px;
-}
-
-.all:hover,
-.website:hover,
-.apps:hover,
-.design:hover,
-.marketing:hover {
+.buttons:hover {
     border-radius: 4px;
     border: solid #2196F3 0.15em;
-}
-
-.website {
-    text-align: center;
-    width: 128px;
-    height: 38px;
-    border-style: none;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    margin-right: 8px;
-}
-
-.apps {
-    text-align: center;
-    width: 145px;
-    height: 38px;
-    border-style: none;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    margin-right: 8px;
-}
-
-.design {
-    text-align: center;
-    width: 103px;
-    height: 38px;
-    border-style: none;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    margin-right: 8px;
-}
-
-.marketing {
-    text-align: center;
-    width: 130px;
-    height: 38px;
-    border-style: none;
-    background-color: #F5F4FA;
-    border-radius: 4px;
 }
 
 .text-for-all {
@@ -505,11 +471,6 @@ footer {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-
-.text-for-all:hover {
-    cursor: pointer;
 }
 
 .text-for-button {
@@ -520,6 +481,11 @@ footer {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--main-color);
+    padding: 6px 22px;
+}
+
+.text {
+    color: #FFFFFF;
 }
 
 .text-for-button:hover {
@@ -545,6 +511,10 @@ footer {
     margin-bottom: 30px;
 }
 
+.box-names {
+    padding: 20px 24px;
+}
+
 .for-h2 {
     width: 322px;
     font-weight: bold;
@@ -553,8 +523,6 @@ footer {
     letter-spacing: 0.06em;
     color: var(--main-color);
     text-transform: none;
-    margin-top: 20px;
-    margin-left: 21px;
 }
 
 .for-p {
@@ -563,6 +531,4 @@ footer {
     letter-spacing: 0.03em;
     color: var(--second-color);
     margin-top: 4px;
-    margin-bottom: 20px;
-    margin-left: 24px;
 }
